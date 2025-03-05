@@ -51,21 +51,23 @@
             android:textSize="16sp" /> <!-- Texto en negro -->
 
 
-        <!-- Opción de Horarios -->
         <Button
             android:id="@+id/horario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@color/white"
-            android:text="Horarios"
+            android:text="HORARIO"
             android:textColor="@android:color/black"
             android:textSize="16sp" /> <!-- Texto en negro -->
 
 
+
+
+
         <!-- Opción de Asignaturas -->
         <Button
-            android:id="@+id/btnSubjects"
+            android:id="@+id/asignaturas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -77,7 +79,7 @@
 
         <!-- Opción de Notas -->
         <Button
-            android:id="@+id/btnGrades"
+            android:id="@+id/notas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -88,12 +90,12 @@
 
         <!-- Opción de Contacto -->
         <Button
-            android:id="@+id/btnContact"
+            android:id="@+id/contactos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@android:color/white"
-            android:text="Contacto"
+            android:text="Contactos"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
     </GridLayout>

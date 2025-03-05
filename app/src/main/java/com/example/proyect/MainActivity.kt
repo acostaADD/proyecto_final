@@ -42,9 +42,29 @@ class MainActivity : AppCompatActivity() {
             goToNoticias() // Navegar a la actividad de noticias
         }
 
+        // Encuentra los botones (TextViews) y configura los listeners
         val horario = findViewById<TextView>(R.id.horario)
-        horario.setOnClickListener {
-            goToHorario() // Navegar a la actividad de horario
+       horario.setOnClickListener {
+            goToHORARIO() // Navegar a la actividad de noticias
+        }
+
+
+        // Encuentra los botones (TextViews) y configura los listeners
+        val asignaturas = findViewById<TextView>(R.id.asignaturas)
+        asignaturas.setOnClickListener {
+            goToAsignaturas() // Navegar a la actividad de noticias
+        }
+
+        // Encuentra los botones (TextViews) y configura los listeners
+        val notas = findViewById<TextView>(R.id.notas)
+        notas.setOnClickListener {
+            goToNotas() // Navegar a la actividad de noticias
+        }
+
+        // Encuentra los botones (TextViews) y configura los listeners
+        val contactos = findViewById<TextView>(R.id.contactos)
+        contactos.setOnClickListener {
+            goToContactos() // Navegar a la actividad de noticias
         }
     }
 
@@ -52,12 +72,36 @@ class MainActivity : AppCompatActivity() {
         // Crear el intent para ir a MainActivity2 (o la actividad de noticias)
         val i = Intent(this, MainActivity2::class.java)
         startActivity(i)
+
     }
 
-    private fun goToHorario() {
-        // Crear el intent para ir a MainActivity3 (o la actividad de horario)
+    private fun goToHORARIO() {
+        // Crear el intent para ir a MainActivity3 (o la actividad de noticias)
         val i = Intent(this, MainActivity3::class.java)
         startActivity(i)
+
+    }
+
+
+    private fun goToAsignaturas() {
+        // Crear el intent para ir a MainActivity4 (o la actividad de noticias)
+        val i = Intent(this, MainActivity4::class.java)
+        startActivity(i)
+
+    }
+    private fun goToNotas() {
+        // Crear el intent para ir a MainActivity2 (o la actividad de noticias)
+        val i = Intent(this, MainActivity5::class.java)
+        startActivity(i)
+
+
+
+    }
+    private fun goToContactos() {
+        // Crear el intent para ir a MainActivity2 (o la actividad de noticias)
+        val i = Intent(this, MainActivity6::class.java)
+        startActivity(i)
+
     }
 }
 

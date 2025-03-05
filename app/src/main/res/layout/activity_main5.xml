@@ -5,6 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity5">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="108dp"
+        android:layout_height="80dp"
+        android:text="notas"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="279dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
