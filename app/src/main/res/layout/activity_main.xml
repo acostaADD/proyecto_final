@@ -41,7 +41,7 @@
 
         <!-- Opción de Noticias -->
         <Button
-            android:id="@+id/btnNews"
+            android:id="@+id/noticias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -53,7 +53,7 @@
 
         <!-- Opción de Horarios -->
         <Button
-            android:id="@+id/btnSchedule"
+            android:id="@+id/horario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
