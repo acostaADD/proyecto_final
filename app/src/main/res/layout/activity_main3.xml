@@ -1,10 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/celeste"
     tools:context=".MainActivity3">
 
+    <!-- TÍTULO HORARIO DE CLASES -->
+    <TextView
+        android:id="@+id/tituloHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORARIO DE CLASES"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- LOGO ESCOLAR -->
+
+    <!-- TABLA HORARIO ALUMNOS -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="182dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloHorario"
+        app:srcCompat="@drawable/imagen_png" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Encabezado -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Día" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="08:00-09:00" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="09:00-10:00" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="10:00-10:30" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="10:30-11:30" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="11:30-12:30" android:textStyle="bold" android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <!-- Lunes -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Lunes" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Matemáticas" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Inglés" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="RECREO" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Historia" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Ciencias" android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <!-- Martes -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Martes" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Lenguaje" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Matemáticas" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="RECREO" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Ciencias" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Historia" android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <!-- Miércoles -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Miércoles" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Ciencias" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Educ. Física" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="RECREO" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Matemáticas" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Lenguaje" android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <!-- Jueves -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Jueves" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Historia" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Lenguaje" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="RECREO" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Inglés" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Matemáticas" android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <!-- Viernes -->
+            <TableRow>
+                <TextView android:padding="8dp" android:text="Viernes" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Inglés" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Arte" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="RECREO" android:textStyle="bold" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Computación" android:textColor="@android:color/black"/>
+                <TextView android:padding="8dp" android:text="Educ. Física" android:textColor="@android:color/black"/>
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
